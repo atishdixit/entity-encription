@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: entity-encryption
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/encryption_demo?allowPublicKeyRetrieval=true
+    username: pcdbuser
+    password: pcdbuser
+
+encryption:
+  key: A3Hd$G6!sWSecret
+  algorithm: AES/ECB/PKCS5PADDING
